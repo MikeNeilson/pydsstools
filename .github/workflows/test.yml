@@ -15,5 +15,5 @@ jobs:
         with:
           python-version: ${{ matrix.python-version}}
           architecture: x64      
-      - name: run setup.py ${{ matrix.pytho-version }}
+      - name: run setup.py ${{ matrix.python-version }} on ${{matrix.platform}}
         run: python setup.py install --user
