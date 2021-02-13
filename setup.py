@@ -22,6 +22,7 @@ if not arch_x64:
     raise Exception('Only the 64-bit Python is supported')
     
 def python_requires():
+    """ commented out for demo
     os = platform.system()
     if os == 'Linux':
         return '~=3.8'
@@ -29,6 +30,7 @@ def python_requires():
         return '~=3.6'
     else:
         raise Exception('Operating system not supported')
+    """
 
 class BinaryDistribution(Distribution):
     def is_pure(self):
